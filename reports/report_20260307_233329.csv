@@ -1,0 +1,17 @@
+﻿target,type,source,error,malicious,suspicious,threat_score,is_threat,src_ip,dest_ip,description,severity,timestamp
+SNYK:CONAN-OPENSSL-15123718,vulnerability,vulners_api,,1,0,9.8,True,,,Stack-based Buffer Overflow,high,
+SNYK:CONAN-OPENSSL-15123587,vulnerability,vulners_api,,0,1,7.5,True,,,Stack-based Buffer Overflow,medium,
+SNYK:CONAN-OPENSSL-15124519,vulnerability,vulners_api,,0,1,8.1,True,,,Out-of-bounds Write,medium,
+SNYK:RUBY-OPENSSL-6036190,vulnerability,vulners_api,,0,1,7.5,True,,,Missing Cryptographic Step,medium,
+event_id:4625,winevent,simulated_logs,,1,0,8.0,True,192.168.1.100,,Неудачная попытка входа; count=3,high,2024-01-15 08:30:15
+event_id:4648,winevent,simulated_logs,,1,0,8.0,True,192.168.1.100,,Вход с использованием явных учетных данных; count=1,high,2024-01-15 08:32:45
+event_id:1102,winevent,simulated_logs,,1,0,8.0,True,10.0.2.15,,Очистка журнала аудита; count=1,high,2024-01-15 08:35:10
+event_id:4720,winevent,simulated_logs,,0,1,6.0,True,192.168.1.50,,Создание учетной записи; count=1,medium,2024-01-15 08:40:30
+demo-01,dns,simulated_logs,,0,1,4.0,True,192.168.1.100,,частые DNS-запросы (27),medium,2024-01-15 09:00:00
+malicious-domain.com,dns,simulated_logs,,1,0,11.0,True,10.0.2.15,,домен из списка подозрительных; частые DNS-запросы (15),high,2024-01-15 09:01:00
+google.com,dns,simulated_logs,,0,1,4.0,True,192.168.1.50,,частые DNS-запросы (120),medium,2024-01-15 09:02:00
+EJFDEBFEEBFACACACACACACACACACAAA,dns,simulated_logs,,0,1,6.0,True,10.0.2.15,,возможный DNS-туннель,medium,2024-01-15 09:03:00
+microsoft.com,dns,simulated_logs,,0,1,4.0,True,192.168.1.100,,частые DNS-запросы (45),medium,2024-01-15 09:04:00
+/admin.php,http,simulated_logs,,0,1,4.0,True,192.168.1.100,,доступ к чувствительному URL: /admin.php,medium,2024-01-15 10:00:00
+/login.php,http,simulated_logs,,1,0,13.0,True,10.0.2.15,,подозрительный User-Agent: sqlmap/1.6; доступ к чувствительному URL: /login.php; подозрительный HTTP-ответ: 403,high,2024-01-15 10:01:00
+/wp-admin,http,simulated_logs,,1,0,13.0,True,203.0.113.45,,подозрительный User-Agent: Nikto/2.1.6; доступ к чувствительному URL: /wp-admin; подозрительный HTTP-ответ: 404,high,2024-01-15 10:02:00
